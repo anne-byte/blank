@@ -1,13 +1,23 @@
 import React, { Component } from 'react'
 
-export default class Login extends Component {
+const style = {
+  // display: 'flex',
+  // flexFlow: 'column wrap',
+  // flex: '1 0 30%',
+  // alignItems: 'left'
+
+
+}
+
+ export default class Login extends Component {
+
   render() {
     return (
       <div>
-        <form>
+        <form style={style} onSubmit={this.props.clicked}>
           Enter user name
           <input type="text" />
-          <button type="submit">&rarr;</button>
+          <button type="submit" >&rarr;</button>
         </form>
       </div>
     )
